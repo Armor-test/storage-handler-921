@@ -1,0 +1,35 @@
+# CODEOWNERS file for storage-handler-921
+# Global owners - will be requested for all PRs
+* @Armor-test/unit-test @Armor-test/team-core @Armor-test/dept-release
+
+# Directory ownership
+/data/ @Armor-test/dept-data @Armor-test/squad-product @Armor-test/squad-tooling
+/utils/ @Armor-test/dept-identity @Armor-test/dept-reporting
+/core/ @Armor-test/squad-ml @Armor-test/dept-billing
+/common/ @Armor-test/team-core @Armor-test/grp-api @Armor-test/team-security
+/spec/ @Armor-test/grp-storage @Armor-test/squad-ml @Armor-test/dept-reliability
+/extensions/ @Armor-test/squad-apps @Armor-test/squad-frontend
+/db/ @Armor-test/dept-identity @Armor-test/unit-governance
+/docs/ @Armor-test/squad-database @Armor-test/squad-product @Armor-test/squad-research
+/vendor/ @Armor-test/team-core @Armor-test/squad-research @Armor-test/unit-devops
+/tools/ @Armor-test/grp-payments @Armor-test/dept-test
+/dist/ @Armor-test/team-notifications @Armor-test/squad-search @Armor-test/grp-search
+
+# File type ownership
+*.py @Armor-test/grp-integration @Armor-test/squad-ml
+*.c @Armor-test/squad-cloud @Armor-test/squad-research
+*.toml @Armor-test/team-core @Armor-test/squad-cloud @Armor-test/grp-api
+*.html @Armor-test/dept-reliability @Armor-test/team-core
+*.kt @Armor-test/squad-apps @Armor-test/team-logging @Armor-test/unit-design
+*.sql @Armor-test/team-research @Armor-test/unit-test @Armor-test/dept-test
+*.xml @Armor-test/squad-ux @Armor-test/dept-reporting @Armor-test/dept-identity
+*.gradle @Armor-test/dept-api @Armor-test/squad-qa @Armor-test/unit-cloud
+*.yml @Armor-test/squad-search @Armor-test/dept-logging @Armor-test/grp-ui
+*.js @Armor-test/grp-api @Armor-test/squad-api @Armor-test/dept-reliability
+
+# Security and special files
+Dockerfile @Armor-test/devops @Armor-test/infra
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+package.json @Armor-test/dependency-team @Armor-test/security
